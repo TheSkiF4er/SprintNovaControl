@@ -1,6 +1,6 @@
 {
   "name": "sprintnova-control",
-  "version": "2.0.0",
+  "version": "10.0.0",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -38,5 +38,5 @@
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22"
   },
-  "description": "SprintNova Control — production-ready workspace for sprint planning, team load management and task tracking."
+  "description": "SprintNova Control — product operations workspace with sprint governance, category-aware task management, risk center, blocker management, fast status switching, delivery health score, capacity planning and resilient local data operations."
 }

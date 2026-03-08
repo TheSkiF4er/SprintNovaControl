@@ -1,37 +1,33 @@
 # SprintNova Control
 
-**SprintNova Control** — production-ready React-приложение для управления спринтами, загрузкой команды и жизненным циклом задач продукта.
+SprintNova Control is a production-style React application for sprint governance, delivery visibility and safe local operations management.
 
-## Описание продукта
-SprintNova Control помогает продуктовым и delivery-командам видеть статус спринта в одном месте: планировать загрузку, контролировать backlog, быстро переводить задачи между статусами и управлять составом команды без внешних сервисов.
+## What's improved in release 9.0
 
-## Что реализовано
-- 3 продуктовые зоны: обзор, исполнение спринта и операционный центр
-- канбан-доска активного спринта с быстрым переводом карточек между статусами
-- поиск по задачам и фильтрация по участникам команды
-- создание спринта, участников и задач через переиспользуемые формы
-- валидации обязательных полей и ограничений по доступному времени спринта
-- автогенерация ID задачи в формате `XX-1234`
-- визуализация прогресса и загрузки команды
-- сохранение состояния в `localStorage` с отдельным ключом продукта
-- кнопка восстановления стартовых данных для демо и тестов
+- added task dependencies with dependency-aware planning
+- added dependency risk filtering across dashboard, board and registry
+- added dependency hotspots to surface bottleneck tasks that block multiple cards
+- task cards now show waiting-on context and open dependency chains
+- operations studio can assign and edit task dependencies directly
+- capacity view now shows how many tasks per person are waiting on dependencies
+- updated storage isolation for release 9 state
 
-## Позиционирование
-SprintNova Control можно использовать как внутренний lightweight-инструмент для небольших продуктовых команд, которым нужен понятный и автономный трекер спринтов без сложной инфраструктуры.
+## Scripts
 
-## Запуск
 ```bash
 npm install
 npm start
-```
-
-## Сборка production-версии
-```bash
 npm run build
 ```
 
-## Стек
-- React
-- TypeScript
-- React Router
-- CSS
+## Product positioning
+
+SprintNova Control helps delivery teams manage sprint scope, keep workload visible, detect stale execution earlier, separate work by category, govern task priority, surface blockers quickly, understand dependency bottlenecks and maintain a clean task registry without losing local data integrity.
+
+## Документы репозитория
+
+- `.gitignore` — исключения для Git
+- `CHANGELOG.md` — история изменений
+- `CODE_OF_CONDUCT.md` — правила взаимодействия
+- `CONTRIBUTING.md` — как вносить изменения
+- `SECURITY.md` — как сообщать о проблемах безопасности
